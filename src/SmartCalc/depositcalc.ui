@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DepositCalc</class>
+ <widget class="QDialog" name="DepositCalc">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>501</width>
+    <height>361</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label_deposit_period">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>20</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Deposit period(month)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_deposit_amount">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Deposit amount</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="amount_deposit">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>141</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+   <property name="decimals">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <double>9999999999999.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>100000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_interest_rate">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>20</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Interest rate(%)</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="rate_interest">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>50</y>
+     <width>101</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+   <property name="decimals">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <double>9999999999999.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>18.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="period_deposit">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>50</y>
+     <width>111</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+   <property name="decimals">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <double>10000000000000000.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>12.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="rate_tax">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>110</y>
+     <width>131</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+   <property name="decimals">
+    <number>0</number>
+   </property>
+   <property name="maximum">
+    <double>9999999999999.000000000000000</double>
+   </property>
+   <property name="value">
+    <double>18.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_tax_rate">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Tax rate(%)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_tax_rate_2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>80</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Period payment</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_per">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>110</y>
+     <width>111</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Month</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Qarter</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Year</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_capital">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>110</y>
+     <width>121</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Capitalisation</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_include">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>170</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Include payment</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_exclude">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>170</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Exclude payment</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>220</y>
+     <width>451</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Calculate Deposit</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="result_depos">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>270</y>
+     <width>451</width>
+     <height>81</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
